@@ -17,7 +17,9 @@ namespace GuessingGameTemplate4U
 {
     public partial class Form1 : Form
     {
-        //TODO create global list to store user guesses
+        //create global list to store user guesses
+       
+        public static List<int> guesses = new List<int>();
 
         public Form1()
         {
@@ -26,6 +28,8 @@ namespace GuessingGameTemplate4U
 
         private void Form1_Load(object sender, EventArgs e)
         {
+  
+
             //launch the Main Screen
             MainScreen ms = new MainScreen();
             this.Controls.Add(ms);
